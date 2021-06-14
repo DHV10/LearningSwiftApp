@@ -8,19 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		610D72F42677977400CBFAC3 /* LearningSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D72F32677977400CBFAC3 /* LearningSwiftApp.swift */; };
-		610D72F62677977400CBFAC3 /* LearningSwiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D72F52677977400CBFAC3 /* LearningSwiftView.swift */; };
+		610D72F62677977400CBFAC3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D72F52677977400CBFAC3 /* HomeView.swift */; };
 		610D72F82677977700CBFAC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 610D72F72677977700CBFAC3 /* Assets.xcassets */; };
 		610D72FB2677977700CBFAC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 610D72FA2677977700CBFAC3 /* Preview Assets.xcassets */; };
 		610D7308267797E400CBFAC3 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 610D7307267797E400CBFAC3 /* data.json */; };
 		610D730A267799FD00CBFAC3 /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = 610D7309267799FD00CBFAC3 /* style.html */; };
 		610D730C2677A1F500CBFAC3 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D730B2677A1F500CBFAC3 /* Models.swift */; };
 		610D730E2677A3CF00CBFAC3 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D730D2677A3CF00CBFAC3 /* ContentModel.swift */; };
+		610D73102677B14100CBFAC3 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D730F2677B14100CBFAC3 /* HomeViewRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		610D72F02677977400CBFAC3 /* LearningSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		610D72F32677977400CBFAC3 /* LearningSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningSwiftApp.swift; sourceTree = "<group>"; };
-		610D72F52677977400CBFAC3 /* LearningSwiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningSwiftView.swift; sourceTree = "<group>"; };
+		610D72F52677977400CBFAC3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		610D72F72677977700CBFAC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		610D72FA2677977700CBFAC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		610D72FC2677977700CBFAC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -28,6 +29,7 @@
 		610D7309267799FD00CBFAC3 /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
 		610D730B2677A1F500CBFAC3 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		610D730D2677A3CF00CBFAC3 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		610D730F2677B14100CBFAC3 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +86,8 @@
 		610D73022677978100CBFAC3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				610D72F52677977400CBFAC3 /* LearningSwiftView.swift */,
+				610D72F52677977400CBFAC3 /* HomeView.swift */,
+				610D730F2677B14100CBFAC3 /* HomeViewRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,8 +196,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				610D730C2677A1F500CBFAC3 /* Models.swift in Sources */,
+				610D73102677B14100CBFAC3 /* HomeViewRow.swift in Sources */,
 				610D730E2677A3CF00CBFAC3 /* ContentModel.swift in Sources */,
-				610D72F62677977400CBFAC3 /* LearningSwiftView.swift in Sources */,
+				610D72F62677977400CBFAC3 /* HomeView.swift in Sources */,
 				610D72F42677977400CBFAC3 /* LearningSwiftApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
