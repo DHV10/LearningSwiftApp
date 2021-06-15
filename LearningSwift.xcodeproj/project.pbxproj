@@ -16,6 +16,8 @@
 		610D730C2677A1F500CBFAC3 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D730B2677A1F500CBFAC3 /* Models.swift */; };
 		610D730E2677A3CF00CBFAC3 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D730D2677A3CF00CBFAC3 /* ContentModel.swift */; };
 		610D73102677B14100CBFAC3 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D730F2677B14100CBFAC3 /* HomeViewRow.swift */; };
+		61EFC8B72678FC7300475D6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EFC8B62678FC7300475D6F /* ContentView.swift */; };
+		61EFC8B92679033100475D6F /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EFC8B82679033100475D6F /* ContentViewRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		610D730B2677A1F500CBFAC3 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		610D730D2677A3CF00CBFAC3 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		610D730F2677B14100CBFAC3 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
+		61EFC8B62678FC7300475D6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		61EFC8B82679033100475D6F /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 			children = (
 				610D72F52677977400CBFAC3 /* HomeView.swift */,
 				610D730F2677B14100CBFAC3 /* HomeViewRow.swift */,
+				61EFC8B62678FC7300475D6F /* ContentView.swift */,
+				61EFC8B82679033100475D6F /* ContentViewRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,7 +203,9 @@
 			files = (
 				610D730C2677A1F500CBFAC3 /* Models.swift in Sources */,
 				610D73102677B14100CBFAC3 /* HomeViewRow.swift in Sources */,
+				61EFC8B72678FC7300475D6F /* ContentView.swift in Sources */,
 				610D730E2677A3CF00CBFAC3 /* ContentModel.swift in Sources */,
+				61EFC8B92679033100475D6F /* ContentViewRow.swift in Sources */,
 				610D72F62677977400CBFAC3 /* HomeView.swift in Sources */,
 				610D72F42677977400CBFAC3 /* LearningSwiftApp.swift in Sources */,
 			);

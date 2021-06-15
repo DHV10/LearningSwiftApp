@@ -22,7 +22,7 @@ struct HomeViewRow: View {
             Rectangle()
                 .foregroundColor(.white)
                 .cornerRadius(10)
-                .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                .shadow(radius: 5)
                 .aspectRatio(CGSize(width: 335, height: 175), contentMode: .fit)
 //                            .frame(width: 336, height: 215, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             //content
