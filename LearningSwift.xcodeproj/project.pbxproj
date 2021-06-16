@@ -16,6 +16,9 @@
 		610D730C2677A1F500CBFAC3 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D730B2677A1F500CBFAC3 /* Models.swift */; };
 		610D730E2677A3CF00CBFAC3 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D730D2677A3CF00CBFAC3 /* ContentModel.swift */; };
 		610D73102677B14100CBFAC3 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D730F2677B14100CBFAC3 /* HomeViewRow.swift */; };
+		61B8C3812679F59100EACDDD /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61B8C3802679F59100EACDDD /* AVKit.framework */; };
+		61B8C3832679F5B500EACDDD /* Constance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B8C3822679F5B500EACDDD /* Constance.swift */; };
+		61B8C3852679F5CE00EACDDD /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B8C3842679F5CE00EACDDD /* ContentDetailView.swift */; };
 		61EFC8B72678FC7300475D6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EFC8B62678FC7300475D6F /* ContentView.swift */; };
 		61EFC8B92679033100475D6F /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EFC8B82679033100475D6F /* ContentViewRow.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +35,9 @@
 		610D730B2677A1F500CBFAC3 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		610D730D2677A3CF00CBFAC3 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		610D730F2677B14100CBFAC3 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
+		61B8C3802679F59100EACDDD /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		61B8C3822679F5B500EACDDD /* Constance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constance.swift; sourceTree = "<group>"; };
+		61B8C3842679F5CE00EACDDD /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
 		61EFC8B62678FC7300475D6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		61EFC8B82679033100475D6F /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61B8C3812679F59100EACDDD /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +59,7 @@
 			children = (
 				610D72F22677977400CBFAC3 /* LearningSwift */,
 				610D72F12677977400CBFAC3 /* Products */,
+				61B8C37F2679F59100EACDDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +102,7 @@
 				610D730F2677B14100CBFAC3 /* HomeViewRow.swift */,
 				61EFC8B62678FC7300475D6F /* ContentView.swift */,
 				61EFC8B82679033100475D6F /* ContentViewRow.swift */,
+				61B8C3842679F5CE00EACDDD /* ContentDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -119,6 +128,7 @@
 			children = (
 				610D7309267799FD00CBFAC3 /* style.html */,
 				610D7307267797E400CBFAC3 /* data.json */,
+				61B8C3822679F5B500EACDDD /* Constance.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -128,6 +138,14 @@
 			children = (
 			);
 			path = Helps;
+			sourceTree = "<group>";
+		};
+		61B8C37F2679F59100EACDDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61B8C3802679F59100EACDDD /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,9 +219,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61B8C3832679F5B500EACDDD /* Constance.swift in Sources */,
 				610D730C2677A1F500CBFAC3 /* Models.swift in Sources */,
 				610D73102677B14100CBFAC3 /* HomeViewRow.swift in Sources */,
 				61EFC8B72678FC7300475D6F /* ContentView.swift in Sources */,
+				61B8C3852679F5CE00EACDDD /* ContentDetailView.swift in Sources */,
 				610D730E2677A3CF00CBFAC3 /* ContentModel.swift in Sources */,
 				61EFC8B92679033100475D6F /* ContentViewRow.swift in Sources */,
 				610D72F62677977400CBFAC3 /* HomeView.swift in Sources */,

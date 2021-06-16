@@ -15,6 +15,10 @@ class ContentModel: ObservableObject {
     @Published var currentModule: Module?
     var currentModuleIndex = 0
     
+    //current lesson
+    @Published var currentLesson: Lesson?
+    var currentLessonIndex = 0
+    
     var styleData: Data?
     
     init() {
@@ -64,6 +68,38 @@ class ContentModel: ObservableObject {
             }
         }
         currentModule = modules[currentModuleIndex]
+    }
+    
+    func beginLesson(_ lessonIndex: Int ) {
+        //check that the lesson index is within rage of module lesson
+        if lessonIndex < currentModule!.content.lessons.count {
+            currentLessonIndex = lessonIndex
+        }
+        else {
+            currentLessonIndex = 0
+        }
+        
+        currentLesson = currentModule!.content.lessons[currentLessonIndex]
+        
+    }
+    
+    func hasNextLesson() -> Bool {
+        return (currentLessonIndex + 1 < currentModule!.content.lessons.count)
+    }
+    
+    func nextLesson() {
+        //advance the lesson index
+        currentLessonIndex += 1
+        
+        //check that it is with in lesson properity
+        if currentLessonIndex < currentModule!.content.lessons.count {
+            //set the current lesson proprity
+            currentLesson = currentModule!.content.lessons[currentLessonIndex]
+        } else {
+            //default
+            currentLessonIndex = 0
+            currentLesson = nil
+        }
     }
     
 }
