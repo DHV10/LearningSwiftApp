@@ -19,6 +19,7 @@
 		61B8C3812679F59100EACDDD /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61B8C3802679F59100EACDDD /* AVKit.framework */; };
 		61B8C3832679F5B500EACDDD /* Constance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B8C3822679F5B500EACDDD /* Constance.swift */; };
 		61B8C3852679F5CE00EACDDD /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B8C3842679F5CE00EACDDD /* ContentDetailView.swift */; };
+		61CC5524267A340600953DFC /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CC5523267A340600953DFC /* CodeTextView.swift */; };
 		61EFC8B72678FC7300475D6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EFC8B62678FC7300475D6F /* ContentView.swift */; };
 		61EFC8B92679033100475D6F /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EFC8B82679033100475D6F /* ContentViewRow.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		61B8C3802679F59100EACDDD /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		61B8C3822679F5B500EACDDD /* Constance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constance.swift; sourceTree = "<group>"; };
 		61B8C3842679F5CE00EACDDD /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
+		61CC5523267A340600953DFC /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
 		61EFC8B62678FC7300475D6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		61EFC8B82679033100475D6F /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +105,7 @@
 				61EFC8B62678FC7300475D6F /* ContentView.swift */,
 				61EFC8B82679033100475D6F /* ContentViewRow.swift */,
 				61B8C3842679F5CE00EACDDD /* ContentDetailView.swift */,
+				61CC5523267A340600953DFC /* CodeTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				61EFC8B72678FC7300475D6F /* ContentView.swift in Sources */,
 				61B8C3852679F5CE00EACDDD /* ContentDetailView.swift in Sources */,
 				610D730E2677A3CF00CBFAC3 /* ContentModel.swift in Sources */,
+				61CC5524267A340600953DFC /* CodeTextView.swift in Sources */,
 				61EFC8B92679033100475D6F /* ContentViewRow.swift in Sources */,
 				610D72F62677977400CBFAC3 /* HomeView.swift in Sources */,
 				610D72F42677977400CBFAC3 /* LearningSwiftApp.swift in Sources */,
