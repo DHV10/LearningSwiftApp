@@ -30,17 +30,29 @@ struct ContentDetailView: View {
                     model.nextLesson()
                 } label: {
                     ZStack{
-                        Rectangle()
+                        RectangleCard(color: Color.green)
                             .frame(height: 48)
-                            .foregroundColor(.green)
-                            .cornerRadius(10)
-                            .shadow(radius: 5)
+                           
                         Text("Next Lesson : \(model.currentModule!.content.lessons[model.currentLessonIndex+1].title)")
                             .foregroundColor(.white)
                             .bold()
                     }
                 }
 
+            }
+            else {
+                Button {
+                   model.currentContentSelected = nil
+                } label: {
+                    ZStack{
+                        RectangleCard(color: Color.green)
+                            .frame(height: 48)
+                            
+                        Text("Complete")
+                            .foregroundColor(.white)
+                            .bold()
+                    }
+                }
             }
         }
         .padding()
