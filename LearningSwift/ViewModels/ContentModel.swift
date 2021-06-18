@@ -19,12 +19,19 @@ class ContentModel: ObservableObject {
     @Published var currentLesson: Lesson?
     var currentLessonIndex = 0
     
+        //current question
+    @Published var currentQuestion: Question?
+    var currentQuestionIndex = 0
+    
     //Curent lesson explanation
-    @Published var lessonDescription = NSAttributedString()
+    @Published var codeDescription = NSAttributedString()
     
     //current lesson/ question index
     @Published var currentContentSelected:Int?
+    @Published var currentTestSelected:Int?
+    
     var styleData: Data?
+    
     
    // var styleData: Data?
     
@@ -87,7 +94,7 @@ class ContentModel: ObservableObject {
         }
         
         currentLesson = currentModule!.content.lessons[currentLessonIndex]
-        lessonDescription = addStyle(currentLesson!.explanation)
+        codeDescription = addStyle(currentLesson!.explanation)
         
     }
     
@@ -103,11 +110,25 @@ class ContentModel: ObservableObject {
         if currentLessonIndex < currentModule!.content.lessons.count {
             //set the current lesson proprity
             currentLesson = currentModule!.content.lessons[currentLessonIndex]
-            lessonDescription = addStyle(currentLesson!.explanation)
+            codeDescription = addStyle(currentLesson!.explanation)
         } else {
             //default
             currentLessonIndex = 0
             currentLesson = nil
+        }
+    }
+    
+    func beginTest(_ moduleId: Int) {
+        //set current module
+        beginModule(moduleId)
+        //set curent question
+        currentQuestionIndex = 0
+        
+        //if have question in test
+        if currentModule?.test.questions.count ?? 0 > 0  {
+            currentQuestion = currentModule!.test.questions[currentQuestionIndex]
+            //set the content of question
+            codeDescription = addStyle(currentQuestion!.content)
         }
     }
     

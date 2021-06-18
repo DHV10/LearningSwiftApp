@@ -20,6 +20,7 @@
 		61B8C3812679F59100EACDDD /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61B8C3802679F59100EACDDD /* AVKit.framework */; };
 		61B8C3832679F5B500EACDDD /* Constance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B8C3822679F5B500EACDDD /* Constance.swift */; };
 		61B8C3852679F5CE00EACDDD /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B8C3842679F5CE00EACDDD /* ContentDetailView.swift */; };
+		61C6AA26267BA533007FF1A2 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C6AA25267BA533007FF1A2 /* TestView.swift */; };
 		61CC5524267A340600953DFC /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CC5523267A340600953DFC /* CodeTextView.swift */; };
 		61EFC8B72678FC7300475D6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EFC8B62678FC7300475D6F /* ContentView.swift */; };
 		61EFC8B92679033100475D6F /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EFC8B82679033100475D6F /* ContentViewRow.swift */; };
@@ -41,6 +42,7 @@
 		61B8C3802679F59100EACDDD /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		61B8C3822679F5B500EACDDD /* Constance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constance.swift; sourceTree = "<group>"; };
 		61B8C3842679F5CE00EACDDD /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
+		61C6AA25267BA533007FF1A2 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		61CC5523267A340600953DFC /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
 		61EFC8B62678FC7300475D6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		61EFC8B82679033100475D6F /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				61B8C3842679F5CE00EACDDD /* ContentDetailView.swift */,
 				61CC5523267A340600953DFC /* CodeTextView.swift */,
 				613155C1267B866C00771C12 /* RectangleCard.swift */,
+				61C6AA25267BA533007FF1A2 /* TestView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61C6AA26267BA533007FF1A2 /* TestView.swift in Sources */,
 				61B8C3832679F5B500EACDDD /* Constance.swift in Sources */,
 				610D730C2677A1F500CBFAC3 /* Models.swift in Sources */,
 				610D73102677B14100CBFAC3 /* HomeViewRow.swift in Sources */,
