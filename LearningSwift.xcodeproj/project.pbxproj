@@ -17,6 +17,7 @@
 		610D730E2677A3CF00CBFAC3 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D730D2677A3CF00CBFAC3 /* ContentModel.swift */; };
 		610D73102677B14100CBFAC3 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D730F2677B14100CBFAC3 /* HomeViewRow.swift */; };
 		613155C2267B866C00771C12 /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613155C1267B866C00771C12 /* RectangleCard.swift */; };
+		61B1F904267CE1260008A59E /* ResultTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B1F903267CE1260008A59E /* ResultTestView.swift */; };
 		61B8C3812679F59100EACDDD /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61B8C3802679F59100EACDDD /* AVKit.framework */; };
 		61B8C3832679F5B500EACDDD /* Constance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B8C3822679F5B500EACDDD /* Constance.swift */; };
 		61B8C3852679F5CE00EACDDD /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B8C3842679F5CE00EACDDD /* ContentDetailView.swift */; };
@@ -39,6 +40,7 @@
 		610D730D2677A3CF00CBFAC3 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		610D730F2677B14100CBFAC3 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
 		613155C1267B866C00771C12 /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
+		61B1F903267CE1260008A59E /* ResultTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTestView.swift; sourceTree = "<group>"; };
 		61B8C3802679F59100EACDDD /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		61B8C3822679F5B500EACDDD /* Constance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constance.swift; sourceTree = "<group>"; };
 		61B8C3842679F5CE00EACDDD /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				61EFC8B82679033100475D6F /* ContentViewRow.swift */,
 				61B8C3842679F5CE00EACDDD /* ContentDetailView.swift */,
 				61C6AA25267BA533007FF1A2 /* TestView.swift */,
+				61B1F903267CE1260008A59E /* ResultTestView.swift */,
 				613155C1267B866C00771C12 /* RectangleCard.swift */,
 				61CC5523267A340600953DFC /* CodeTextView.swift */,
 			);
@@ -238,6 +241,7 @@
 				61CC5524267A340600953DFC /* CodeTextView.swift in Sources */,
 				61EFC8B92679033100475D6F /* ContentViewRow.swift in Sources */,
 				610D72F62677977400CBFAC3 /* HomeView.swift in Sources */,
+				61B1F904267CE1260008A59E /* ResultTestView.swift in Sources */,
 				613155C2267B866C00771C12 /* RectangleCard.swift in Sources */,
 				610D72F42677977400CBFAC3 /* LearningSwiftApp.swift in Sources */,
 			);

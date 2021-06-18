@@ -104,6 +104,9 @@ struct TestView: View {
             .padding()
             .navigationBarTitle("\(model.currentModule?.category ?? "") Test")
         }
+        else {
+            ResultTestView(numCorrect: numCorrect)
+        }
         
     }
         .onAppear{
