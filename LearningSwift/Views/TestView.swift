@@ -15,7 +15,7 @@ struct TestView: View {
     @State var sumbmit = false
     //about amount of correct answer
     @State var numCorrect = 0
-    var module : Module
+   // var module : Module
     var body: some View {
         VStack(spacing: 5) {
         if model.currentQuestion != nil {
@@ -109,9 +109,9 @@ struct TestView: View {
         }
         
     }
-        .onAppear{
-            model.beginTest(module.id)
-        }
+//        .onAppear{
+//            model.beginTest(module.id)
+//        }
     }
     
     var buttonText: String {

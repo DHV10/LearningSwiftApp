@@ -36,7 +36,12 @@ class ContentModel: ObservableObject {
    // var styleData: Data?
     
     init() {
+        //Parse local include json data
         getLocalData()
+        
+        //Parse remote json file and parse the data
+        getRemoteData()
+        
     }
     
     func getLocalData() {
@@ -69,6 +74,51 @@ class ContentModel: ObservableObject {
         } catch  {
             print(error)
         }
+        
+    }
+    
+    func getRemoteData() {
+        
+        //String path
+        let urlString = "https://dhv10.github.io/learningSwiftUI-data/data2.json"
+        
+        //create url object
+        let url = URL(string: urlString)
+        
+        guard url != nil else {
+            //cannot create url
+            return
+        }
+        //create a URLRequest object
+        let request = URLRequest(url: url!)
+        
+        //get the season and kick off the task
+        let session = URLSession.shared
+        
+        let dataTask = session.dataTask(with: request) { data, response, error in
+            //check if has a error
+            guard error == nil else {
+                //the has a error
+                return
+            }
+            
+            do{
+                //create json decoder
+                let decoder = JSONDecoder()
+                
+                //decode
+                let modules = try decoder.decode([Module].self, from: data!)
+                
+                //append parsed modules into modules property
+                self.modules += modules
+                
+            }catch {
+                //couldnt parse
+               // print(error)
+            }
+        }
+        //kick off the task
+        dataTask.resume()
         
     }
     
