@@ -109,9 +109,9 @@
 				61EFC8B62678FC7300475D6F /* ContentView.swift */,
 				61EFC8B82679033100475D6F /* ContentViewRow.swift */,
 				61B8C3842679F5CE00EACDDD /* ContentDetailView.swift */,
-				61CC5523267A340600953DFC /* CodeTextView.swift */,
-				613155C1267B866C00771C12 /* RectangleCard.swift */,
 				61C6AA25267BA533007FF1A2 /* TestView.swift */,
+				613155C1267B866C00771C12 /* RectangleCard.swift */,
+				61CC5523267A340600953DFC /* CodeTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
