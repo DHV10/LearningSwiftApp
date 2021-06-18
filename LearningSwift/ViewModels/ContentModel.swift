@@ -132,6 +132,23 @@ class ContentModel: ObservableObject {
         }
     }
     
+    func nextQuestion() {
+        //advance the index question
+        currentQuestionIndex += 1
+        // check that still have next question
+        if currentQuestionIndex < currentModule!.test.questions.count {
+            //set the curent question propertity
+            currentQuestion = currentModule!.test.questions[currentQuestionIndex]
+            codeDescription = addStyle(currentQuestion!.content)
+        }else {
+            //set defaut
+            currentQuestionIndex = 0
+            currentQuestion = nil
+        }
+        
+        
+    }
+    
     private func addStyle(_ htmlString: String) -> NSAttributedString {
         var resultString = NSAttributedString()
         var data = Data()

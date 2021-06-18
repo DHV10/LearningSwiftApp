@@ -29,7 +29,7 @@ struct TestView: View {
                 //answer
                 ScrollView {
                     VStack {
-                        ForEach( 0..<model.currentQuestion!.answers.count) { index in
+                        ForEach( 0..<model.currentQuestion!.answers.count, id: \.self) { index in
                             Button {
                                 //
                                 selectedAnswerIndex = index
@@ -71,16 +71,29 @@ struct TestView: View {
                 //button sumbit
                 
                 Button {
-                    //
-                    sumbmit = true
-                    if selectedAnswerIndex == model.currentQuestion!.correctIndex {
-                        numCorrect += 1
+                    //question submitted
+                    if sumbmit == true {
+                        model.nextQuestion()
+                        
+                        //set propertty to defaut for the next question
+                        sumbmit = false
+                        selectedAnswerIndex = nil
+                        
+                    }else{
+                        //question hasnt been submitted
+                        sumbmit = true
+                        if selectedAnswerIndex == model.currentQuestion!.correctIndex {
+                            numCorrect += 1
+                        }
                     }
+                    
+                    //
+                 
                 } label: {
                     ZStack {
                         RectangleCard(color: .green)
                             .frame(height: 48)
-                        Text("Sumbmit")
+                        Text(buttonText)
                     }
                 }
                 .disabled(selectedAnswerIndex == nil)
@@ -95,6 +108,22 @@ struct TestView: View {
     }
         .onAppear{
             model.beginTest(module.id)
+        }
+    }
+    
+    var buttonText: String {
+        //check the answer has been submitted
+        if sumbmit == true {
+            if model.currentQuestionIndex + 1 == model.currentModule!.test.questions.count {
+                //this is the last question
+                return "Finish"
+            }
+            else {
+                return "Next"
+            }
+        }
+        else {
+            return "Submit"
         }
     }
 }
