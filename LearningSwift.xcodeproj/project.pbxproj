@@ -86,7 +86,6 @@
 				610D73042677979500CBFAC3 /* Models */,
 				610D73022677978100CBFAC3 /* Views */,
 				610D73032677978C00CBFAC3 /* ViewModels */,
-				610D7306267797B600CBFAC3 /* Helps */,
 				610D7305267797AD00CBFAC3 /* Resources */,
 				610D72F72677977700CBFAC3 /* Assets.xcassets */,
 				610D72FC2677977700CBFAC3 /* Info.plist */,
@@ -143,13 +142,6 @@
 				61B8C3822679F5B500EACDDD /* Constance.swift */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		610D7306267797B600CBFAC3 /* Helps */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helps;
 			sourceTree = "<group>";
 		};
 		61B8C37F2679F59100EACDDD /* Frameworks */ = {

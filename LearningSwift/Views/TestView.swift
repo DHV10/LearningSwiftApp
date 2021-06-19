@@ -15,10 +15,11 @@ struct TestView: View {
     @State var sumbmit = false
     //about amount of correct answer
     @State var numCorrect = 0
+    @State var showResult = false
    // var module : Module
     var body: some View {
         VStack(spacing: 5) {
-        if model.currentQuestion != nil {
+        if model.currentQuestion != nil && showResult == false{
             VStack(alignment: .leading, spacing: 5){
                 //question number
                 Text("Question \(model.currentQuestionIndex + 1) of \(model.currentModule?.test.questions.count ?? 0)")
@@ -73,11 +74,20 @@ struct TestView: View {
                 Button {
                     //question submitted
                     if sumbmit == true {
-                        model.nextQuestion()
                         
-                        //set propertty to defaut for the next question
-                        sumbmit = false
-                        selectedAnswerIndex = nil
+                        if model.currentQuestionIndex + 1 == model.currentModule!.test.questions.count {
+                            
+                            // Show the results
+                            showResult = true
+                        }else {
+                            model.nextQuestion()
+                            
+                            //set propertty to defaut for the next question
+                            sumbmit = false
+                            selectedAnswerIndex = nil
+                        }
+                        
+                
                         
                     }else{
                         //question hasnt been submitted
@@ -104,8 +114,10 @@ struct TestView: View {
             .padding()
             .navigationBarTitle("\(model.currentModule?.category ?? "") Test")
         }
-        else {
+        else if showResult == true {
             ResultTestView(numCorrect: numCorrect)
+        }else {
+            ProgressView()
         }
         
     }
