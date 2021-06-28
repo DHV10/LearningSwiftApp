@@ -24,10 +24,13 @@ struct HomeView: View {
                                         ContentView()
                                         .onAppear(perform:
                                                     {
-                                            model.beginModule(module.id)
+                                                        model.getLessons(module: module) {
+                                                            model.beginModule(module.id)
+                                                        }
+                                         
                                                        // print(model.currentContentSelected)
                                         }),
-                                    tag: module.id,
+                                    tag: module.id.hash,
                                     selection: $model.currentContentSelected,
                                    
                                     label: {
@@ -43,10 +46,13 @@ struct HomeView: View {
                                 NavigationLink(destination:
                                                 TestView()
                                                 .onAppear(perform: {
-                                                    model.beginTest(module.id)
+                                                    model.getQuestions(module: module) {
+                                                        model.beginTest(module.id)
+                                                    }
+                                                   
                                                 })
                                                
-                                               , tag: module.id, selection: $model.currentTestSelected) {
+                                               , tag: module.id.hash, selection: $model.currentTestSelected) {
                                     HomeViewRow(image: module.test.image, title: "\(module.category) Test", description: module.test.description, count: "\(module.test.questions.count) Questions", time: "\(module.test.time)")
                                 }
                             }
