@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08ED3BE3DC1FFAB34291D97B /* Pods_LearningSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD8962D07F66ABE4A196B43 /* Pods_LearningSwift.framework */; };
 		610D72F42677977400CBFAC3 /* LearningSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D72F32677977400CBFAC3 /* LearningSwiftApp.swift */; };
 		610D72F62677977400CBFAC3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D72F52677977400CBFAC3 /* HomeView.swift */; };
 		610D72F82677977700CBFAC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 610D72F72677977700CBFAC3 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 		610D730E2677A3CF00CBFAC3 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D730D2677A3CF00CBFAC3 /* ContentModel.swift */; };
 		610D73102677B14100CBFAC3 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D730F2677B14100CBFAC3 /* HomeViewRow.swift */; };
 		613155C2267B866C00771C12 /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613155C1267B866C00771C12 /* RectangleCard.swift */; };
+		617DC4292689C58B0063FD60 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 617DC4282689C58B0063FD60 /* GoogleService-Info.plist */; };
 		61B1F904267CE1260008A59E /* ResultTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B1F903267CE1260008A59E /* ResultTestView.swift */; };
 		61B8C3812679F59100EACDDD /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61B8C3802679F59100EACDDD /* AVKit.framework */; };
 		61B8C3832679F5B500EACDDD /* Constance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B8C3822679F5B500EACDDD /* Constance.swift */; };
@@ -28,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4259E62C72B19C116B21F1B5 /* Pods-LearningSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningSwift.debug.xcconfig"; path = "Target Support Files/Pods-LearningSwift/Pods-LearningSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		610D72F02677977400CBFAC3 /* LearningSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		610D72F32677977400CBFAC3 /* LearningSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningSwiftApp.swift; sourceTree = "<group>"; };
 		610D72F52677977400CBFAC3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		610D730D2677A3CF00CBFAC3 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		610D730F2677B14100CBFAC3 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
 		613155C1267B866C00771C12 /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
+		617DC4282689C58B0063FD60 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		61B1F903267CE1260008A59E /* ResultTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTestView.swift; sourceTree = "<group>"; };
 		61B8C3802679F59100EACDDD /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		61B8C3822679F5B500EACDDD /* Constance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constance.swift; sourceTree = "<group>"; };
@@ -48,6 +52,8 @@
 		61CC5523267A340600953DFC /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
 		61EFC8B62678FC7300475D6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		61EFC8B82679033100475D6F /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
+		8F08D31082EDAE1122BFE9A1 /* Pods-LearningSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningSwift.release.xcconfig"; path = "Target Support Files/Pods-LearningSwift/Pods-LearningSwift.release.xcconfig"; sourceTree = "<group>"; };
+		ACD8962D07F66ABE4A196B43 /* Pods_LearningSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61B8C3812679F59100EACDDD /* AVKit.framework in Frameworks */,
+				08ED3BE3DC1FFAB34291D97B /* Pods_LearningSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +75,7 @@
 				610D72F22677977400CBFAC3 /* LearningSwift */,
 				610D72F12677977400CBFAC3 /* Products */,
 				61B8C37F2679F59100EACDDD /* Frameworks */,
+				6FCCC43612FEC94FD64890DE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +97,7 @@
 				610D7305267797AD00CBFAC3 /* Resources */,
 				610D72F72677977700CBFAC3 /* Assets.xcassets */,
 				610D72FC2677977700CBFAC3 /* Info.plist */,
+				617DC4282689C58B0063FD60 /* GoogleService-Info.plist */,
 				610D72F92677977700CBFAC3 /* Preview Content */,
 			);
 			path = LearningSwift;
@@ -148,8 +157,19 @@
 			isa = PBXGroup;
 			children = (
 				61B8C3802679F59100EACDDD /* AVKit.framework */,
+				ACD8962D07F66ABE4A196B43 /* Pods_LearningSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6FCCC43612FEC94FD64890DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4259E62C72B19C116B21F1B5 /* Pods-LearningSwift.debug.xcconfig */,
+				8F08D31082EDAE1122BFE9A1 /* Pods-LearningSwift.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 610D72FF2677977700CBFAC3 /* Build configuration list for PBXNativeTarget "LearningSwift" */;
 			buildPhases = (
+				874B74C738A5CD781C33BE2E /* [CP] Check Pods Manifest.lock */,
 				610D72EC2677977400CBFAC3 /* Sources */,
 				610D72ED2677977400CBFAC3 /* Frameworks */,
 				610D72EE2677977400CBFAC3 /* Resources */,
+				41276C094961AC3FB6692B1F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -211,12 +233,55 @@
 			files = (
 				610D72FB2677977700CBFAC3 /* Preview Assets.xcassets in Resources */,
 				610D7308267797E400CBFAC3 /* data.json in Resources */,
+				617DC4292689C58B0063FD60 /* GoogleService-Info.plist in Resources */,
 				610D730A267799FD00CBFAC3 /* style.html in Resources */,
 				610D72F82677977700CBFAC3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41276C094961AC3FB6692B1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearningSwift/Pods-LearningSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearningSwift/Pods-LearningSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LearningSwift/Pods-LearningSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		874B74C738A5CD781C33BE2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearningSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		610D72EC2677977400CBFAC3 /* Sources */ = {
@@ -360,6 +425,7 @@
 		};
 		610D73002677977700CBFAC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4259E62C72B19C116B21F1B5 /* Pods-LearningSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -373,7 +439,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-.LearningSwift";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DHV-.LearningSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -382,6 +448,7 @@
 		};
 		610D73012677977700CBFAC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F08D31082EDAE1122BFE9A1 /* Pods-LearningSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -395,7 +462,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-.LearningSwift";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DHV-.LearningSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
