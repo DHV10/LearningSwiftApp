@@ -39,8 +39,7 @@ class ContentModel: ObservableObject {
    // var styleData: Data?
     
     init() {
-        //Parse local styles html
-        getLocalStyles()
+        
         
         //get Database modules
         getDatabaseModules()
@@ -51,6 +50,8 @@ class ContentModel: ObservableObject {
     }
     
     func getDatabaseModules() {
+        //Parse local styles html
+        getLocalStyles()
         
         let collection = db.collection("modules")
         

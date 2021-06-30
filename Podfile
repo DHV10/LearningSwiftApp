@@ -7,4 +7,5 @@ target 'LearningSwift' do
 
   # Pods for LearningSwift
 pod 'Firebase/Firestore'
+pod 'Firebase/Auth'
 end
