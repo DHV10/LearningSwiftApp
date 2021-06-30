@@ -8,4 +8,11 @@
 import Foundation
 struct Contants {
     static var videoHostUrl = "https://codewithchris.github.io/learningJSON/"
+    
+    enum LogginMode {
+        case login
+        case createAccount
+    }
+    
+    
 }

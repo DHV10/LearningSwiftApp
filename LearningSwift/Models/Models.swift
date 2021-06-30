@@ -44,3 +44,11 @@ struct Question: Decodable, Identifiable {
     var correctIndex: Int = 0
     var answers: [String] = [String]()
 }
+
+class User {
+    var name: String = ""
+    var lastModule: Int?
+    var lastLesson: Int?
+    var lastQuestion: Int?
+    
+}

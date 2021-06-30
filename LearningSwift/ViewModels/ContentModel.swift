@@ -7,8 +7,14 @@
 
 import Foundation
 import Firebase
+import FirebaseAuth
 
 class ContentModel: ObservableObject {
+    
+    //Authentication
+    @Published var loggedIn = false
+    
+    //reference to Cloud Firestore database
     let db = Firestore.firestore()
     
     //list of module
@@ -40,13 +46,74 @@ class ContentModel: ObservableObject {
     
     init() {
         
-        
-        //get Database modules
-        getDatabaseModules()
-        
+
         //Parse remote json file and parse the data
         //getRemoteData()
         
+    }
+    
+    func checkLogin() {
+        
+        //check loggin status
+        loggedIn = Auth.auth().currentUser != nil ? true : false
+        if UserService.shared.user.name == "" {
+            getUserData()
+        }
+    }
+    
+    func saveData(writeToDatabase: Bool = false) {
+        
+        if let loggedInUser = Auth.auth().currentUser {
+            
+            //save the progress locally
+            let user = UserService.shared.user
+            
+            user.lastModule = currentModuleIndex
+            user.lastLesson = currentLessonIndex
+            user.lastQuestion = currentQuestionIndex
+            
+            if writeToDatabase == true {
+                
+                //save to database
+                let db = Firestore.firestore()
+                let ref = db.collection("user").document(loggedInUser.uid)
+                
+                ref.setData(["lastModule":user.lastModule ?? NSNull(),
+                             "lastLesson":user.lastLesson ?? NSNull(),
+                             "lastQuestion":user.lastQuestion ?? NSNull()], merge: true)
+                
+            }
+            
+        }
+
+    }
+    
+    
+    func getUserData() {
+        
+        // Check that there's a logged in user
+        guard Auth.auth().currentUser != nil else {
+            return
+        }
+        
+        // Get the meta data for that user
+        let db = Firestore.firestore()
+        let ref = db.collection("user").document(Auth.auth().currentUser!.uid)
+        ref.getDocument { snapshot, error in
+            
+            // Check there's no errors
+            guard error == nil, snapshot != nil else {
+                return
+            }
+            
+            // Parse the data out and set the user meta data
+            let data = snapshot!.data()
+            let user = UserService.shared.user
+            user.name = data?["name"] as? String ?? ""
+            user.lastModule = data?["lastModule"] as? Int
+            user.lastLesson = data?["lastLesson"] as? Int
+            user.lastQuestion = data?["lastQuestion"] as? Int
+        }
     }
     
     func getDatabaseModules() {
@@ -280,6 +347,10 @@ class ContentModel: ObservableObject {
     }
     
     func beginLesson(_ lessonIndex: Int ) {
+        //reset current question index for resume view
+        currentQuestionIndex = 0
+        
+        
         //check that the lesson index is within rage of module lesson
         if lessonIndex < currentModule!.content.lessons.count {
             currentLessonIndex = lessonIndex
@@ -314,6 +385,7 @@ class ContentModel: ObservableObject {
             currentLessonIndex = 0
             currentLesson = nil
         }
+        saveData()
     }
     
     func beginTest(_ moduleId: String) {
@@ -322,6 +394,8 @@ class ContentModel: ObservableObject {
         //set curent question
         currentQuestionIndex = 0
         
+        //reset lesson index
+        currentLessonIndex = 0
         //if have question in test
         if currentModule?.test.questions.count ?? 0 > 0  {
             currentQuestion = currentModule!.test.questions[currentQuestionIndex]
@@ -344,7 +418,7 @@ class ContentModel: ObservableObject {
             currentQuestion = nil
         }
         
-        
+        saveData()
     }
     
     private func addStyle(_ htmlString: String) -> NSAttributedString {

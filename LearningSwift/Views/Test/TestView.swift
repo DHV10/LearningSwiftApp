@@ -77,6 +77,9 @@ struct TestView: View {
                         
                         if model.currentQuestionIndex + 1 == model.currentModule!.test.questions.count {
                             
+                            //check next question and save progress
+                            model.nextQuestion()
+                            
                             // Show the results
                             showResult = true
                         }else {
@@ -129,7 +132,7 @@ struct TestView: View {
     var buttonText: String {
         //check the answer has been submitted
         if sumbmit == true {
-            if model.currentQuestionIndex + 1 == model.currentModule!.test.questions.count {
+            if  model.currentQuestionIndex + 1 == model.currentModule!.test.questions.count {
                 //this is the last question
                 return "Finish"
             }

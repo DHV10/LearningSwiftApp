@@ -42,6 +42,9 @@ struct ContentDetailView: View {
             }
             else {
                 Button {
+                    //check next lesson and save
+                    model.nextLesson()
+                    
                    model.currentContentSelected = nil
                 } label: {
                     ZStack{
